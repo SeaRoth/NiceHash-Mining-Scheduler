@@ -13,10 +13,6 @@ config = json.load(config_file)
 public_api_key = config['public_api_key']
 private_api_key = config['private_api_key']
 organization_id = config['organization_id']
-withdraw_address_id = config['withdraw_address_id']
-minimum_balance = config['minimum_balance']
-
-loop = True
 
 
 def log_time():
@@ -75,11 +71,33 @@ def api_call(method, path, query, body):
 
 
 if __name__ == "__main__":    
-    reply = api_call(
-        "GET", "/main/api/v2/mining/rigs2", "", None)
-    response_rigs = json.loads(reply.content)
-    print(log_time() + "Current balance: ")
-    print(response_rigs)
+    # reply = api_call(
+    #     "GET", "/main/api/v2/mining/rigs2", "", None)
+    # response_rigs = json.loads(reply.content)
+    # print(log_time() + "response_rigs ")
+    # print(response_rigs)
+
+
+    # Opening JSON file
+    f = open('responses/rigs.json')    
+    # returns JSON object as
+    # a dictionary
+    data = json.load(f)
+    rigs = data['miningRigs']
+
+    for r in rigs:
+        rigId = r['rigId']
+        minerStatus = r['minerStatus']
+        if minerStatus == "MINING":
+            print(rigId)
+        elif minerStatus == "STOPPED":
+            print("miner {} already stopped".format(rigId))
+        else:
+            print("miner is currently {}".format(minerStatus))
+
+
+
+
 
         # if float(balance) > float(minimum_balance):
         #     print(log_time() + "Sending withdraw request")
