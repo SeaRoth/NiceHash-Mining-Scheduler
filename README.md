@@ -6,13 +6,9 @@ Electricity costs between 4-9pm are high in my area and I want NiceHash to stop 
 
 ## Installation
 
----
-
 Acquire the necessary files by downloading the [latest release](https://github.com/SeaRoth/NiceHash-Windows-Scheduler/releases). Save and extract the files to a directory of your choosing.
 
 ## Configuration
-
----
 
 1. Open the NiceHash [API key](https://www.nicehash.com/my/settings/keys) settings. Take note of your organization id located at the top of the page. (Ex. 01234567-0123-0123-0123-012345678900)
 
@@ -66,8 +62,6 @@ Ex:
 ```
 
 ## Donations
-
----
 
 ### BTC: 3LBcrMcyGSNKJoat8dbPseqtomNBe79Yu5
 ### ETH: 0x7579c17a57aFF6d40472A1e21b13D197Fd0116a7
