@@ -69,51 +69,25 @@ def api_call(method, path, query, body):
 
     return response
 
+def get_rigs():
+    reply = api_call(
+        "GET", "/main/api/v2/mining/rigs2", "", None)
+    return json.loads(reply.content)    
 
-if __name__ == "__main__":    
-    # reply = api_call(
-    #     "GET", "/main/api/v2/mining/rigs2", "", None)
-    # response_rigs = json.loads(reply.content)
-    # print(log_time() + "response_rigs ")
-    # print(response_rigs)
+def get_stopped_rigs():
+    stopped_rigs = []
+    response = get_rigs()
+    for r in response['miningRigs']:
+        minerStatus = r['minerStatus']
+        if minerStatus == "STOPPED":
+            stopped_rigs.append(r['rigId'])
+    return stopped_rigs
 
-
-    # Opening JSON file
-    f = open('responses/rigs.json')    
-    # returns JSON object as
-    # a dictionary
-    data = json.load(f)
-    rigs = data['miningRigs']
-
-    for r in rigs:
-        rigId = r['rigId']
+def get_mining_rigs():
+    mining_rigs = []
+    response = get_rigs()
+    for r in response['miningRigs']:
         minerStatus = r['minerStatus']
         if minerStatus == "MINING":
-            print(rigId)
-        elif minerStatus == "STOPPED":
-            print("miner {} already stopped".format(rigId))
-        else:
-            print("miner is currently {}".format(minerStatus))
-
-
-
-
-
-        # if float(balance) > float(minimum_balance):
-        #     print(log_time() + "Sending withdraw request")
-        #     withdraw_info = {
-        #         "withdrawalAddressId": withdraw_address_id,
-        #         "amount": float(balance),
-        #         "currency": "BTC"
-        #     }
-        #     reply = api_call(
-        #         "POST", "/main/api/v2/accounting/withdrawal", "", withdraw_info)
-        #     if reply.status_code == 200:
-        #         print(log_time() + "Withdraw request delivered - TID: " +
-        #               json.loads(reply.content)['id'])
-        #     else:
-        #         print(log_time() + "WARNING: Withdraw request failed")
-        # if len(sys.argv) > 1 and sys.argv[1] == '--cron':
-        #     loop = False
-        # else:
-        #     time.sleep(14400)
+            mining_rigs.append(r['rigId'])
+    return mining_rigs
