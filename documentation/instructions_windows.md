@@ -18,8 +18,6 @@ Scheduling for Windows is easy once you understand what's required.
 3. Create a new folder called Nicehash
 4. Inside this folder we're going to create 2 basic tasks 
 
-___
-
 ## D. Schedule turning ON miner
 1. Right click on the folder you created, click `Create Basic Task`
 2. Name is `Turn on miner` *click next*
@@ -29,7 +27,6 @@ ___
 6. Under `Start a program` browse for the script `windows_start_mining.bat`
    1. For `Start in (optional)` add the `root path` you found from `step A` *click next*
 7. *Click finish*
-___
 
 ## E. Schedule turning OFF miner
 1. Right click on the folder you created, click `Create Basic Task`
@@ -41,7 +38,7 @@ ___
    1. For `Start in (optional)` add the `root path` you found from `step A` *click next*
 7. *Click finish*
 
-Congratulations, your miner(s) should be scheduled.
+***Congratulations, your miner(s) should be scheduled.***
 
 ## F. Testing your scripts
 1. Select your script from the Task Scheduler
