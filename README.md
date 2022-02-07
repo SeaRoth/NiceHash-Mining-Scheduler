@@ -6,6 +6,9 @@ Electricity costs between 4-9pm are high in my area and I want NiceHash to stop 
 
 `Setting up this scheduling process could take up to 1 hour depending on your skill level`
 
+<img src="https://user-images.githubusercontent.com/3461713/152733998-9423999e-1be6-4d5e-a03c-150ad195014d.png" width=60% height=60%>
+
+
 ## Installation
 
 Acquire the necessary files by downloading the [latest release](https://github.com/SeaRoth/NiceHash-Windows-Scheduler/releases). Save and extract the files to a directory of your choosing or download using your preferred method.
