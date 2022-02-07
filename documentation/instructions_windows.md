@@ -17,8 +17,7 @@ Scheduling for Windows is easy once you understand what's required.
 1. Hit Windows key and type `Task scheduler`
 2. On the left side, expand the `Task Scheduler Library`
 3. Create a new folder called Nicehash
-4. Inside this folder we're going to create 2 basic tasks 
-![image](https://user-images.githubusercontent.com/3461713/152732656-a7addf98-b7c8-441b-b1c7-f7e392666956.png)
+4. Inside this folder we're going to create 2 basic tasks ![image](https://user-images.githubusercontent.com/3461713/152732656-a7addf98-b7c8-441b-b1c7-f7e392666956.png)
 
 ## D. Schedule turning ON miner
 1. Right click on the folder you created, click `Create Basic Task`
