@@ -1,6 +1,6 @@
 # NiceHash Mining Scheduler
  
-Use this script to schedule your NiceHash Miner(s).
+Use this script to schedule all of your NiceHash Miner(s) to turn on and off at certain times of the day.
 
 Electricity costs between 4-9pm are high in my area and I want NiceHash to stop mining during those times. This script should start and stop your rigs on a schedule. 
 
