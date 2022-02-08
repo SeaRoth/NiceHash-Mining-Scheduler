@@ -54,7 +54,7 @@ If it didn't work then read the error messages and troubleshoot.
 
 # Setting up a custom schedule (choose 1)
 
-1. Using `Windows` [Task Scheduler](documentation/instructions_windows.md)
+1. Using my custom instructions for `Windows` [Task Scheduler](documentation/instructions_windows.md)
 
 1. Using `CronTab` (`not tested yet`):
 
