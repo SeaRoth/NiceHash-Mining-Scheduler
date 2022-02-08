@@ -11,6 +11,7 @@ Scheduling for Windows is easy once you understand what's required.
    1. Open cmd and type `where python`
    2. For me it was `C:\Users\coryr\AppData\Local\Programs\Python\Python39\python.exe`
    3. ![image](https://user-images.githubusercontent.com/3461713/152732529-2b469bcb-6780-4984-914d-788a579904a6.png)
+   4. A shortcut to the above location is `%LocalAppData%\Programs\Python\Python39\python.exe`
 2. Open `windows_start_mining.bat` and `windows_stop_mining.bat` and replace the first quoted part with your python location
 
 ## C. Windows Task Scheduler
