@@ -38,7 +38,7 @@ Acquire the necessary files by downloading the [latest release](https://github.c
 
 Run the `test_api.py` script before setting up the Windows Task Scheduler or Cron job. 
 
-Using a shell of your choice ([terminal](https://www.businessinsider.com/how-to-open-terminal-on-mac#:~:text=The%20Mac%20Terminal%20is%20a,Mac's%20Finder%20or%20through%20Spotlight.), [cmd](https://www.lifewire.com/command-prompt-2625840)) navigate to the directory where `test_api.py` is located and type `python test.py` (for Windows) or `python3 test.py` (for mac).
+Using a shell of your choice ([terminal](https://www.businessinsider.com/how-to-open-terminal-on-mac#:~:text=The%20Mac%20Terminal%20is%20a,Mac's%20Finder%20or%20through%20Spotlight.), [cmd](https://www.lifewire.com/command-prompt-2625840)) navigate to the directory where `test_api.py` is located and type `python test_api.py` (for Windows) or `python3 test_api.py` (for MAC).
 
 If it worked then you should see a list of your rigs and then 'Finished' at the bottom.
 
